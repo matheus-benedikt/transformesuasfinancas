@@ -11,12 +11,13 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Configuração do base para GitHub Pages
+  base: process.env.GITHUB_PAGES_URL || "/",  // Se estiver em GitHub Pages, use o URL correto
 }));
