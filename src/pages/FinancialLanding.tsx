@@ -70,7 +70,7 @@ const FinancialLanding = () => {
             <Button 
               variant="hero" 
               size="xl" 
-              onClick={() => window.open('https://pay.kiwify.com.br/pVliXms', '_blank')}
+              onClick={scrollToOffer}
               className="text-xl px-12 py-6"
             >
               Sim, quero sair das dívidas agora! 💰
@@ -151,7 +151,7 @@ const FinancialLanding = () => {
                   </div>
                 </Card>
                 
-                <Button variant="celestial" size="lg" onClick={() => window.open('https://pay.kiwify.com.br/pVliXms', '_blank')} className="w-full">
+                <Button variant="celestial" size="lg" onClick={scrollToOffer} className="w-full">
                   Quero começar agora!
                 </Button>
               </div>
