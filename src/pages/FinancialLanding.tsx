@@ -370,7 +370,7 @@ const FinancialLanding = () => {
             <Button 
               variant="hero" 
               size="xl" 
-              className="text-xl px-12 py-6 animate-glow-pulse"
+              className="w-full text-xl py-6 animate-glow-pulse"
               onClick={() => window.open('https://pay.kiwify.com.br/pVliXms', '_blank')}
             >
               Sim, quero sair das dívidas agora! 💎
