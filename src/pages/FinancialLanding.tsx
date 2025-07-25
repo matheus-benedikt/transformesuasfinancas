@@ -67,14 +67,14 @@ const FinancialLanding = () => {
             </p>
             
             <div className="flex flex-col items-center gap-6">
-              <Button 
-                variant="hero" 
-                size="xl" 
-                onClick={scrollToOffer}
-                className="text-xl px-12 py-6"
-              >
-                Sim, quero sair das dívidas agora! 💰
-              </Button>
+            <Button 
+              variant="hero" 
+              size="xl" 
+              onClick={() => window.open('https://pay.kiwify.com.br/pVliXms', '_blank')}
+              className="text-xl px-12 py-6"
+            >
+              Sim, quero sair das dívidas agora! 💰
+            </Button>
               
               <div className="text-sm text-muted-foreground">
                 ⏰ Oferta expira em:
@@ -151,7 +151,7 @@ const FinancialLanding = () => {
                   </div>
                 </Card>
                 
-                <Button variant="celestial" size="lg" onClick={scrollToOffer} className="w-full">
+                <Button variant="celestial" size="lg" onClick={() => window.open('https://pay.kiwify.com.br/pVliXms', '_blank')} className="w-full">
                   Quero começar agora!
                 </Button>
               </div>
@@ -303,6 +303,7 @@ const FinancialLanding = () => {
                   variant="hero" 
                   size="xl" 
                   className="w-full text-xl py-6"
+                  onClick={() => window.open('https://pay.kiwify.com.br/pVliXms', '_blank')}
                 >
                   ADQUIRIR COM DESCONTO 🚀
                 </Button>
@@ -370,6 +371,7 @@ const FinancialLanding = () => {
               variant="hero" 
               size="xl" 
               className="text-xl px-12 py-6 animate-glow-pulse"
+              onClick={() => window.open('https://pay.kiwify.com.br/pVliXms', '_blank')}
             >
               Sim, quero sair das dívidas agora! 💎
             </Button>
